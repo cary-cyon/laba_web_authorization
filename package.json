@@ -1,0 +1,12 @@
+{
+  "name": "laba1",
+  "version": "1.0.0",
+  "description": "MyLaba",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Vlad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
