@@ -15,4 +15,9 @@ app.get('/auth',(req,res)=>{
 	})
 
 })
+app.post('/v1/authorization',(req,res)=>{
+	console.log(req.body.login);
+	console.log(req.body.password);
+	res.send('Ok');
+})
 app.listen(8080)

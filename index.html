@@ -5,9 +5,27 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<input type="text" name="login">
-	<input type="password" name="password">
-	<button> Bход </button>
-	 <script type="text/javascript" src = "script.js">
+	<input type="text" name="login" id = "login">
+	<input type="password" name="password" id = "password">
+	<button id="regist" > Bход </button>
+	<a href="/v1/authorization">ссыkка</a>
+	 <script type="text/javascript">
+	 	let regist = document.getElementById("regist");
+	 	let login = document.getElementById("login");
+	 	let password = document.getElementById("password");
+
+	 	regist.onclick = function() {
+	 			alert("fsdsaf");
+	 			let info = {
+	 				login:login.value,
+	 				password:password.value
+	 			}
+	 			let respose = fetch('/v1/authorization', { method: 'POST',headers: {
+        			'Content-Type': 'application/json;charset=utf-8',
+      	}, body: JSON.stringify(info) });
+
+    			
+  			};
+	 </script>
 </body>
 </html>
